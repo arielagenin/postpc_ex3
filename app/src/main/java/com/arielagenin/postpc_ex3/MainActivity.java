@@ -12,6 +12,7 @@ import com.arielagenin.postpc_ex3.counter_task.CounterThreadsTask;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         final Intent intent = new Intent(this, CounterTaskActivity.class);
         startActivity(intent.putExtra(CounterTaskActivity.EXTRA_COUNTER_TASK_CLASS, counterTaskClass));
     }
+
 
     public void openAsyncTaskActivity(View view) {
         startActivity(CounterAsyncTask.class);
